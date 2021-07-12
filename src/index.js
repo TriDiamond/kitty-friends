@@ -5,7 +5,6 @@ import { createStore, applyMiddleware, combineReducers } from 'redux'
 import { createLogger } from 'redux-logger'
 import thunkMiddleware from 'redux-thunk'
 import './index.css'
-import 'normalize.css'
 import App from './containers/App'
 
 import { searchKitties, fetchKitties } from './reducers'

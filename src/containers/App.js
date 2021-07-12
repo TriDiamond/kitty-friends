@@ -46,7 +46,7 @@ const App = (props) => {
             <h1 className="main-title text-5xl text-gray-100">Loading...</h1>
           ) : (
             <>
-              <h1 className="main-title text-5xl text-gray-100">
+              <h1 className="main-title text-5xl text-gray-100 mb-8 mt-6">
                 Kitty Friends
               </h1>
               <SearchBox searchChange={onSearchChange} />
