@@ -41,8 +41,8 @@ const App = (props) => {
   })
 
   return (
-    <>
-      <div className="max-w-4xl lg:max-w-6xl mx-auto pb-12">
+    <div className="block w-full px-6">
+      <div className="max-w-4xl lg:max-w-6xl mx-auto pb-12 py-6">
         <div className="flex flex-col justify-center items-center my-6">
           {isPending ? (
             <Title context="Loading..." />
@@ -66,7 +66,7 @@ const App = (props) => {
           <p>Build with React + Redux</p>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
