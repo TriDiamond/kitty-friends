@@ -1,6 +1,6 @@
-import React from 'react'
+import { memo } from 'react'
 
-const SearchBox = ({ searchChange }) => {
+const SearchBox = memo(({ searchChange }) => {
   return (
     <>
       <input
@@ -11,6 +11,6 @@ const SearchBox = ({ searchChange }) => {
       />
     </>
   )
-}
+})
 
 export default SearchBox

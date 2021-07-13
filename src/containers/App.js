@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
+
 import CardList from '../components/CardList'
 import SearchBox from '../components/SearchBox'
 import Scroll from '../components/Scroll'
 import ErrorBoundry from '../components/ErrorBoundry'
+import Title from '../components/Title'
 
-import { setSearchField, fetchKitties } from '../actions'
+import { setSearchField, fetchKitties } from '../store/actions'
 
 // Set state mapper to map out the state into the props
 const mapStateToProps = (state) => {
@@ -43,12 +45,10 @@ const App = (props) => {
       <div className="max-w-4xl lg:max-w-6xl mx-auto pb-12">
         <div className="flex flex-col justify-center items-center my-6">
           {isPending ? (
-            <h1 className="main-title text-5xl text-gray-100">Loading...</h1>
+            <Title context="Loading..." />
           ) : (
             <>
-              <h1 className="main-title text-5xl text-gray-100 mb-8 mt-6">
-                Kitty Friends
-              </h1>
+              <Title context="Kitty Friends" />
               <SearchBox searchChange={onSearchChange} />
             </>
           )}
